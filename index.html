@@ -1,40 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Beltran Thomas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 60px auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
+  <meta charset="UTF-8">
+  <title>Beltran Thomas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        h1 {
-            font-size: 32px;
-        }
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        h2 {
-            margin-top: 40px;
-        }
-    </style>
+  <style>
+    :root {
+      --bg: #0e0e10;
+      --text: #f5f5f7;
+      --muted: #9ca3af;
+      --accent: #4f46e5;
+      --card: #1a1a1f;
+      --border: #2a2a30;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 56px;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: var(--muted);
+      margin-bottom: 60px;
+      max-width: 700px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      margin-top: 80px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      transition: 0.2s;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 120px;
+      font-size: 14px;
+      color: var(--muted);
+      text-align: center;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
 
+  <div class="container">
+
     <h1>Beltran Thomas</h1>
 
-    <p>
-        Hi, I’m Beltran. I’m interested in startups, AI, music, and philosophy.
-        I’m especially curious about how technology shapes structure and reality.
-    </p>
+    <div class="subtitle">
+      Exploring the intersection of AI, startups, music, and philosophy.
+      Curious about how technology shapes structure, value, and reality.
+    </div>
 
     <h2>Projects</h2>
-    <p>
-        I’m currently exploring AI tools, Web3 systems, and how startups create
-        new forms of digital infrastructure.
-    </p>
+
+    <div class="card">
+      <p>
+        Currently exploring AI tools, Web3 systems, and how startups build new digital infrastructure.
+      </p>
+    </div>
+
+    <h2>Ontology and Bitcoin</h2>
+
+    <div class="card">
+      <p>
+        <strong>Bitcoin and the Ontology of Digital Being</strong>
+      </p>
+
+      <p>
+        An exploration of Bitcoin not merely as financial innovation,
+        but as an ontological intervention — grounding digital existence
+        in procedural verification and irreversible energy expenditure.
+      </p>
+
+      <p>
+        From institutional ontology to procedural realism,
+        Bitcoin reframes what it means for something intangible to be real.
+      </p>
+
+      <p>
+        <a href="Bitcoin and the Ontology of Digital Being.pdf" target="_blank">
+          Read the full paper →
+        </a>
+      </p>
+    </div>
+
+    <footer>
+      © 2026 Beltran Thomas
+    </footer>
+
+  </div>
 
 </body>
 </html>
